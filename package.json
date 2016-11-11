@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "http-server": "^0.8.0"
+  },
+  "dependencies": {
+    "request-promise": "^4.1.1"
   }
 }
