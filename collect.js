@@ -1,10 +1,10 @@
-var find = require('./find.js');
+var find = require('./lib/find.js');
 var path = require('path');
 var fs = require('fs');
 
 var statesOut = path.join(__dirname, 'usa')
 var countryOut = path.join(__dirname, 'world')
-var fetchStates = true;
+var fetchStates = process.argv[2] === 'usa';
 
 if (fetchStates) {
   fetchAnswers(getStatesQuestions(), getStateNames(), writeResults(statesOut));
